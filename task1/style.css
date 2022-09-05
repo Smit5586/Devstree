@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: aqua;
+}
+.container {
+  width: 80%;
+  display: table;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+}
+.menu img {
+  width: 100px;
+}
+.image img {
+  width: 100%;
+}
+.box {
+  margin: 40px 0;
+}
+.box_main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxs {
+  width: 26.5%;
+  margin: 20px;
+  box-shadow: 0px 2px 5px 2px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.emailaddress {
+  font-size: 150%;
+}
+.email1 {
+  width: 200px;
+  height: 30px;
+}
+.btn {
+  height: 30px;
+  width: 30px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center p {
+  font-size: 300%;
+  margin-right: 200px;
+}
+.Email {
+  margin-left: 70px;
+}
+.boxs:hover{
+    background-color: aqua;
+    cursor: pointer;
+    
+}
+.center p:hover{
+    color: aqua;
+    text-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+input[type=email]:focus {
+    background-color: lightblue;
+  }
+
+.btn:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 736px) {
+    .boxs {
+     width: 100%;
+    }
+  }
+  @media only screen and (max-width: 938px) {
+    .center{
+        flex-direction: column;
+        display: flex;
+        
+    }
+    .center p{
+        margin-right: 0%;
+    }
+    .Email{
+        margin-left: 0%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 384px) {
+    .btn{
+        width: 20px;
+        height: 25px;
+    }
+    .email1 {
+        width: 141px;
+        height: 26px;
+      }
+      .emailaddress {
+        font-size: 120%;
+      }
+
+  }
+
+
